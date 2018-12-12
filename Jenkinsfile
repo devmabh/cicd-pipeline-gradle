@@ -4,8 +4,8 @@ pipeline {
     stages {
       stage ('checkout') {
           steps {
-          git credentialsId: "GITHUB" 
-              URL: "ssh://git@github.com:devmabh/cicd-pipeline-gradle"
+          git credentialsId: 'GITHUB'
+              URL: 'ssh://git@github.com:devmabh/cicd-pipeline-gradle'
           }
       }              
       stage ('Build') {
