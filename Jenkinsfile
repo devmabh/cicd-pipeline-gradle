@@ -3,7 +3,8 @@ pipeline {
     agent any
     stages {
       stage ('checkout') {
-          steps {
+          steps 
+          {
           git credentialsId: 'GITHUB', URL: 'https://git@github.com:devmabh/cicd-pipeline-gradle'
           }
       }              
