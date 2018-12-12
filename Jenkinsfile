@@ -5,7 +5,7 @@ pipeline {
       stage ('checkout') {
           steps 
           {
-          git credentialsId: 'GITHUB', URL: 'https://git@github.com:devmabh/cicd-pipeline-gradle'
+          git credentialsId: 'GITHUB', url: 'https://git@github.com:devmabh/cicd-pipeline-gradle'
           }
       }              
       stage ('Build') {
